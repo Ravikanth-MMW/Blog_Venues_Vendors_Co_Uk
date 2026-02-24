@@ -5,116 +5,91 @@
 <title>Blog – VenuesAndVendors</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-/* ---------------- VARIABLES ---------------- */
-:root{
-  --navy:#0f2f5f;
-  --accent:#f5a623;
-  --muted:#6b7a90;
-  --bg:#f6f8fc;
-  --white:#ffffff;
-}
+<link rel="stylesheet" href="assets/style.css">
+  <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
-/* ---------------- BASE ---------------- */
-*{box-sizing:border-box;}
-body{
-  margin:0;
-  font-family:Inter,system-ui,sans-serif;
-  background:var(--bg);
-  color:#0b1f3a;
-}
-
-/* ---------------- SECTION ---------------- */
-.blog-section{
-  max-width:1200px;
-  margin:auto;
-  padding:60px 16px;
-}
-
-.blog-section h1{
-  text-align:center;
-  color:var(--navy);
-  font-size:28px;
-  margin-bottom:40px;
-}
-
-/* ---------------- GRID ---------------- */
-.blog-grid{
-  display:grid;
-  grid-template-columns:1fr;          /* Mobile default */
-  gap:24px;
-}
-
-/* ---------------- CARD ---------------- */
-.blog-card{
-  background:var(--white);
-  padding:24px;
-  border-radius:16px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-  transition:.3s;
-  cursor:pointer;
-}
-
-.blog-card:hover{
-  transform:translateY(-6px);
-}
-
-.blog-card h3{
-  color:var(--navy);
-  font-size:18px;
-  margin-bottom:10px;
-}
-
-.blog-card p{
-  font-size:14px;
-  color:var(--muted);
-  line-height:1.6;
-}
-
-.blog-card a{
-  display:inline-block;
-  margin-top:14px;
-  color:var(--accent);
-  font-weight:600;
-  text-decoration:none;
-}
-
-/* ---------------- BREAKPOINTS ---------------- */
-@media(min-width:600px){
-  .blog-grid{
-    grid-template-columns:repeat(2,1fr); /* Tablet */
-  }
-}
-
-@media(min-width:1024px){
-  .blog-grid{
-    grid-template-columns:repeat(3,1fr); /* Desktop */
-  }
-  .blog-section h1{
-    font-size:34px;
-  }
-}
-</style>
-</head>
 
 <body>
 
-<section class="blog-section">
-  <h1>Latest Blogs & Insights</h1>
+<!-- HEADER -->
+ <nav class="nav">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-text">VenuesAndVendors</span>
+                <span class="nav-logo-domain">.co.uk</span>
+            </a>
+            <a href="mailto:onboard@venuesandvendors.co.uk" class="nav-cta">Get Early Access</a>
+        </nav>
 
-  <div class="blog-grid">
+<!-- BLOG SECTION -->
 
-    <div class="blog-card" onclick="location.href='UKWeddingsCorporateEventsBuzz.html'">
-      <h3>UK Weddings & Corporate Events Buzz – Feb 2026</h3>
-      <p>
-        Discover the biggest wedding law changes, venue launches,
-        and corporate event trends shaping the UK events industry.
-      </p>
-      <a href="UKWeddingsCorporateEventsBuzz.html">Read more →</a>
+<section class="post-section">
+  <h1 class="post-title">Curated stories of United Kingdom <span>Venues & Vendors</span></h1>
+  
+
+  <div class="post-grid">
+
+    <div class="post-card" onclick="location.href='UKWeddingsCorporateEventsBuzz.html'"  >
+      <div class="post-image">
+        <img src="images/UK Weddings & Corporate Events Buzz.jpg">
+      </div>
+
+      <div class="post-content">
+        <div class="post-meta">February 2026 · UK Events</div>
+
+        <h3 class="post-heading">
+          UK Weddings & Corporate Events Buzz – Feb 2026
+        </h3>
+
+        <p class="post-text">
+          Outdoor wedding law changes, record-breaking corporate
+          investment, sustainability-led venues, and the biggest
+          trends defining the UK events industry in 2026 ...
+        </p>
+
+        <a href="UKWeddingsCorporateEventsBuzz.html" class="post-link">
+          Read article →
+        </a>
+      </div>
+    </div>
+
+     <div class="post-card" onclick="location.href='Scottish Wedding Awards 2026.html'"  >
+      <div class="post-image">
+        <img src="images/Scottish Wedding Awards 2026.jpg">
+      </div>
+
+      <div class="post-content">
+        <div class="post-meta">Scottish Weddings · Awards 2026</div>
+
+        <h3 class="post-heading">
+         Scottish Wedding Awards 2026: Glasgow Ceremony Delivers Big Wins & Venue Spotlight!
+        </h3>
+
+        <p class="post-text">
+         Awards 2026 (by Oceanic Awards) celebrated Scotland’s elite wedding talent! Finalists were revealed back in November after public votes, and winners ...
+        </p>
+
+        <a href="Scottish Wedding Awards 2026.html" class="post-link">
+          Read article →
+        </a>
+      </div>
     </div>
 
   </div>
 </section>
+
+ <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-logo">VenuesAndVendors.co.uk</p>
+            <p class="footer-platform">A <a href="#">BookVenue.AI</a> Platform</p>
+            <div class="footer-links">
+                <a href="mailto:onboard@venuesandvendors.co.uk" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+            </div>
+            <p class="footer-copyright">© 2025 VenuesAndVendors. All rights reserved.</p>
+        </footer>
 
 </body>
 </html>
