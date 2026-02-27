@@ -952,6 +952,94 @@ a.site-link {
   padding-bottom:3px;
 }
 
+
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.back-button {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #bb894d;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+
+.back-button:hover {
+  background: #bb894d;
+}
+
+
+.back-button .arrow-wrap {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.back-button .arrow-wrap span {
+  position: absolute;
+  height: 1.5px;
+  background: #bb894d;
+  left: 0;
+  transition: background 0.3s ease;
+}
+
+
+.back-button:hover .arrow-wrap span {
+  background: #fff;
+}
+
+
+.arrow-part-1 {
+  width: 100%;
+  top: 53%;
+  transform: translateY(-50%);
+}
+
+
+.arrow-part-2 {
+ width: 54%;
+    top: 48%;
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+.arrow-part-3 {
+ width: 56%;
+    top: 48%;
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+.back-btn a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.back-btn p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: #000;
+}
+.blog-tags a{
+    color:blue;
+   color: #2c89e7;
+    padding-right: 10px;
+}
 /* ---------------- RESPONSIVE ---------------- */
 @media(min-width:768px){
   .post-grid{
