@@ -781,6 +781,14 @@ a.site-link {
         grid-template-columns: 1fr;
         gap: 1.8rem;
     }
+    .blog-image img {
+  
+    height: 100%;
+    }
+    .blog-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    }
 }   /* Responsive */
         @media (max-width: 768px) {
             .nav {
